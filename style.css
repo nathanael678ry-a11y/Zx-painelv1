@@ -1,0 +1,65 @@
+body {
+  background:#0b1220;
+  color:white;
+  font-family:Arial;
+}
+
+.panel {
+  max-width:380px;
+  margin:20px auto;
+  background:#020617;
+  padding:15px;
+  border-radius:12px;
+}
+
+h1, h2 {
+  text-align:center;
+}
+
+label {
+  display:block;
+  margin-top:10px;
+}
+
+input, select, button {
+  width:100%;
+  margin-top:5px;
+}
+
+.range {
+  margin:10px 0;
+}
+
+.armas label {
+  display:block;
+  margin:4px 0;
+}
+
+.check {
+  margin-top:10px;
+}
+
+button {
+  padding:14px;
+  font-size:15px;
+  border:none;
+  border-radius:8px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.btn-zero {
+  background:#38bdf8;
+  color:black;
+}
+
+.btn-antiga {
+  background:#22c55e;
+  color:black;
+}
+
+textarea {
+  margin-top:12px;
+  height:120px;
+  resize:none;
+}
