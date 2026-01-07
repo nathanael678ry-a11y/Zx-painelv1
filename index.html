@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Free Fire – Painel de Sensibilidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="panel">
+  <h1>🔥 Free Fire Sens Panel</h1>
+
+  <!-- VERSÃO DO JOGO -->
+  <label>Versão do Free Fire</label>
+  <select id="versaoFF">
+    <option value="NORMAL">Free Fire Normal</option>
+    <option value="MAX">Free Fire MAX</option>
+    <option value="AMAZON">Free Fire Amazon</option>
+  </select>
+
+  <!-- MARCA -->
+  <label>Marca do Celular</label>
+  <select id="marca">
+    <option>Samsung</option>
+    <option>Xiaomi</option>
+    <option>Redmi</option>
+    <option>Poco</option>
+    <option>Motorola</option>
+    <option>Realme</option>
+    <option>Oppo</option>
+    <option>Vivo</option>
+    <option>Asus</option>
+    <option>Huawei</option>
+    <option>Infinix</option>
+    <option>Tecno</option>
+    <option>iPhone</option>
+    <option>Outro</option>
+  </select>
+
+  <!-- UPLOAD -->
+  <h2>📸🎥 Análise IA (Opcional)</h2>
+
+  <label>Foto de treino</label>
+  <input type="file" accept="image/*" id="imgIA">
+
+  <label>Vídeo de treino</label>
+  <input type="file" accept="video/*" id="videoIA">
+
+  <label class="check">
+    <input type="checkbox" id="usarIA">
+    Usar IA para calibrar a sensibilidade
+  </label>
+
+  <!-- SENS ANTIGA -->
+  <h2>🎯 Sensibilidade Anterior</h2>
+
+  <div class="range">
+    Geral <span id="gOld">100</span>
+    <input type="range" min="0" max="200" value="100" id="geralOld">
+  </div>
+
+  <!-- ARMAS -->
+  <h2>🔫 Armas utilizadas</h2>
+  <div class="armas">
+    <label><input type="checkbox" value="SMG"> SMG</label>
+    <label><input type="checkbox" value="AR"> AR</label>
+    <label><input type="checkbox" value="SHOTGUN"> Shotgun</label>
+    <label><input type="checkbox" value="SNIPER"> Sniper</label>
+    <label><input type="checkbox" value="DMR"> DMR</label>
+  </div>
+
+  <!-- BOTÕES -->
+  <button class="btn-zero" onclick="gerarDoZero()">
+    GERAR SENS 100% DO ZERO
+  </button>
+
+  <button class="btn-antiga" onclick="gerarDaAnterior()">
+    GERAR A PARTIR DA SENS ANTERIOR
+  </button>
+
+  <textarea id="resultado" readonly></textarea>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
